@@ -101,14 +101,6 @@ footer.bg-light a {
 }
 footer.bg-light a:hover { text-decoration: underline; }
 
-.card-like {
-  background: rgba(255,255,255,0.94);
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 6px 18px rgba(20,20,20,0.06);
-  border: 1px solid rgba(10,10,10,0.03);
-}
-
 @media (max-width: 992px) {
   .navbar .gap-4 { gap: 1rem; }
   .search-bar { margin-top: 8px; }
@@ -122,4 +114,5 @@ footer.bg-light a:hover { text-decoration: underline; }
   .menu-categorias .categoria { padding: 5px 10px; font-size: 0.82rem; }
   footer.bg-light .row .col-md-3 { width: 100%; }
 }
+
 
