@@ -1,0 +1,133 @@
+/* ========== VARIÁVEIS ========== */
+:root{
+  --primary-blue: #cfefff;        /* tom inicial do gradiente e do rodapé */
+  --primary-blue-dark: #0d6efd;   /* para destaques */
+  --body-mid: #eaf8ff;
+  --text-color: #222;
+  --footer-text: rgba(0,0,0,0.78);
+  --footer-height: 120px;
+}
+
+/* ======= RESET & BASE ======= */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: "Poppins", Arial, sans-serif; color: var(--text-color); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+
+/* ======= GRADIENTE DO CORPO (azul -> branco) ======= */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, var(--primary-blue) 0%, var(--body-mid) 35%, #ffffff 100%);
+  background-attachment: fixed;
+}
+
+/* útil para garantir footer no fim sem sobreposição */
+.main-content { flex: 1 0 auto; }
+
+/* ======= NAVBAR ======= */
+.navbar {
+  background: rgba(255,255,255,0.90); /* leve translucidez para ver o gradiente atrás */
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 1px 6px rgba(20,20,20,0.03);
+  backdrop-filter: blur(4px);
+  z-index: 50;
+}
+
+.navbar-brand img { height: 45px; transition: transform 0.2s ease; }
+.navbar-brand img:hover { transform: scale(1.08); }
+
+/* busca */
+.search-bar {
+  border-radius: 25px;
+  padding: 10px 18px;
+  border: 1px solid #cfd8e3;
+  background: rgba(255,255,255,0.96);
+  transition: box-shadow .2s, border-color .2s;
+}
+.search-bar:focus {
+  border-color: var(--primary-blue-dark);
+  box-shadow: 0 0 8px rgba(13,110,253,0.14);
+}
+
+/* ícones e botões */
+.navbar .btn { border-radius: 20px; padding: 4px 14px; font-size: 0.85rem; transition: .25s; }
+.navbar .btn:hover { background-color: var(--primary-blue-dark); color: #fff; }
+.navbar i { color: var(--primary-blue-dark); transition: transform .2s; }
+.navbar i:hover { transform: scale(1.12); }
+
+/* ======= MENU DE CATEGORIAS ======= */
+.menu-categorias {
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  padding: 6px 0;
+}
+.menu-categorias .categoria {
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.92rem;
+  border-color: var(--primary-blue-dark);
+  color: var(--primary-blue-dark);
+  transition: transform .18s, background .18s, color .18s;
+}
+.menu-categorias .categoria:hover {
+  background: var(--primary-blue-dark);
+  color: #fff;
+  transform: translateY(-3px);
+}
+.menu-categorias .categoria.active {
+  background: var(--primary-blue-dark);
+  color: #fff;
+}
+
+/* ======= RODAPÉ (sobrescreve .bg-light do Bootstrap só para o footer) ======= */
+/* Observação: o HTML fornecido tem <footer class="bg-light py-4 mt-4"> — vamos sobrescrever esse .bg-light apenas quando for footer */
+footer.bg-light {
+  background: var(--primary-blue) !important;   /* azul claro sólido */
+  color: var(--footer-text);
+  border-top: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.03);
+  padding-top: 28px;  /* mantém o espaçamento do py-4 */
+  padding-bottom: 28px;
+  margin-top: 24px;
+}
+
+/* Estilizando o conteúdo do rodapé (container/colunas) */
+footer.bg-light .container { max-width: 1140px; margin: 0 auto; }
+footer.bg-light .row { align-items: center; justify-content: center; text-align: center; gap: 12px; }
+footer.bg-light .row .col-md-3 { color: var(--footer-text); }
+footer.bg-light strong { display:block; margin-bottom:6px; color: rgba(0,0,0,0.85); }
+
+/* Links no rodapé (se tiver) */
+footer.bg-light a {
+  color: var(--primary-blue-dark);
+  text-decoration: none;
+  font-weight: 500;
+}
+footer.bg-light a:hover { text-decoration: underline; }
+
+/* Se quiser um rodapé levemente translúcido (opcional) */
+/* footer.bg-light { background: rgba(207,239,255,0.97) !important; backdrop-filter: blur(2px); } */
+
+/* ======= CARTÕES / SEÇÕES (para boa leitura sobre o gradiente) ======= */
+.card-like {
+  background: rgba(255,255,255,0.94);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(20,20,20,0.06);
+  border: 1px solid rgba(10,10,10,0.03);
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 992px) {
+  .navbar .gap-4 { gap: 1rem; }
+  .search-bar { margin-top: 8px; }
+  footer.bg-light .row { text-align: center; gap: 10px; }
+  :root { --footer-height: auto; }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img { height: 38px; }
+  .menu-categorias ul { flex-wrap: wrap; gap: 8px !important; }
+  .menu-categorias .categoria { padding: 5px 10px; font-size: 0.82rem; }
+  footer.bg-light .row .col-md-3 { width: 100%; }
+}

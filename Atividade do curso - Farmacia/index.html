@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pague mais</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Barra superior -->
+  <nav class="navbar bg-white shadow-sm py-3">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- LOGO -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="scr/logo.png" alt="logo">
+      </a>
+
+      <!-- BARRA DE BUSCA -->
+      <form class="flex-grow-1 px-4">
+        <input type="text" class="form-control search-bar" placeholder="O que você procura?">
+      </form>
+
+      <!-- LOGIN e CESTA -->
+      <div class="d-flex align-items-center gap-4">
+
+        <!-- Botão Entrar -->
+        <div class="text-center">
+          <i class="bi bi-person" style="font-size: 1.4rem;"></i>
+          <button class="btn btn-outline-dark btn-sm mt-1">Entrar</button>
+        </div>
+
+        <!-- Botão Minha Cesta -->
+        <div class="text-center">
+          <i class="bi bi-bag" style="font-size: 1.4rem;"></i>
+          <button class="btn btn-outline-dark btn-sm mt-1">Minha Cesta</button>
+        </div>
+
+      </div>
+
+
+    </div>
+  </nav>
+
+  <!-- MENU DE CATEGORIAS -->
+  <div class="menu-categorias shadow-sm">
+    <div class="container">
+      <ul class="nav justify-content-start py-2 gap-3">
+
+        <li><a href="#mamaes-bebes" class="btn btn-outline-primary categoria">Mamães e bebês</a></li>
+        <li><a href="#beleza" class="btn btn-outline-primary categoria">Dermo e Beleza</a></li>
+        <li><a href="#medicamentos-saude" class="btn btn-outline-primary categoria">Medicamentos e Saúde</a></li>
+        <li><a href="#vida-saudavel" class="btn btn-outline-primary categoria">Vida Saudável</a></li>
+
+      </ul>
+    </div>
+  </div>
+
+  <!-- Promoções -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    </div>
+
+    <!-- Carousel-1 -->
+    <div class="carousel-inner">
+
+      <!-- SLIDE 1 -->
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center gap-3 py-3">
+          <img src="scr/Promoção 01.webp" class="card-slide">
+          <img src="scr/Promoção 02.webp" class="card-slide">
+          <img src="scr/Promoção 03.webp" class="card-slide">
+          <img src="scr/Promoção 04.webp" class="card-slide">
+          <img src="scr/Promoção 05.webp" class="card-slide">
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center gap-3 py-3">
+          <img src="scr/Promoção 06.webp" class="card-slide">
+          <img src="scr/Promoção 07.webp" class="card-slide">
+          <img src="scr/Promoção 08.webp" class="card-slide">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Botões da esquerda e da direita -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Mais comprados -->
+  <div class="container my-5">
+    <h3 class="mb-4">Mais comprados</h3>
+
+    <!-- Carrossel-2 -->
+    <div id="produtosCarousel2" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- ITEM 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+
+            <!-- CARD 1 -->
+            <div class="col-6 col-md-4 col-lg-2 mb-3">
+              <div class="card h-100 p-2 shadow-sm produto-card">
+                <img src="scr/Probiótico Enterogermina 20 frascos de 5ml - Tamanho Família.webp" class="card-img-top" alt="Produto 1">
+                <div class="card-body">
+                  <h6 class="card-title">Probiótico Enterogermina 20 frascos de 5ml - Tamanho Família1</h6>
+                  <p class="preco fw-bold">R$ 168,99</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-6 col-md-4 col-lg-2 mb-3">
+              <div class="card h-100 p-2 shadow-sm produto-card">
+                <img src="scr/Oscillococcinum 200k Anas Barbariae Hepatis Et Cordis Extractum 200k 30 Tubos de 1g cada.webp"
+                  class="card-img-top" alt="Produto 2">
+                <div class="card-body">
+                  <h6 class="card-title">Oscillococcinum 200k Anas Barbariae Hepatis Et Cordis Extractum 200k 30 Tubos de 1g cada</h6>
+                  <p class="preco fw-bold">R$ 71,98</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-6 col-md-4 col-lg-2 mb-3">
+              <div class="card h-100 p-2 shadow-sm produto-card">
+                <img src="scr/Polivitamínico ReGenesis Premium com Lipinova para Gestantes 60 cápsulas.webp"
+                  class="card-img-top" alt="Produto 3">
+                <div class="card-body">
+                  <h6 class="card-title">Polivitamínico ReGenesis Premium com Lipinova para Gestantes 60 cápsulas</h6>
+                  <p class="preco fw-bold">R$ 120,49</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-6 col-md-4 col-lg-2 mb-3">
+              <div class="card h-100 p-2 shadow-sm produto-card">
+                <img src="scr/Suplemento Alimentar Omegafor Plus 1g Ômega 3 - 120 cápsulas.webp" class="card-img-top" alt="Produto 4">
+                <div class="card-body">
+                  <h6 class="card-title">PSuplemento Alimentar Omegafor Plus 1g Ômega 3 - 120 cápsulas</h6>
+                  <p class="preco fw-bold">R$ 90,49</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="col-6 col-md-4 col-lg-2 mb-3">
+              <div class="card h-100 p-2 shadow-sm produto-card">
+                <img src="scr/Kelo-Cote Redutor de Cicatrizes Gel de Silicone 15g.webp" class="card-img-top"
+                  alt="Produto 5">
+                <div class="card-body">
+                  <h6 class="card-title">Kelo-Cote Redutor de Cicatrizes Gel de Silicone 15g
+                  </h6>
+                  <p class="preco fw-bold">R$ 82,43</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="col-6 col-md-4 col-lg-2 mb-3">
+              <div class="card h-100 p-2 shadow-sm produto-card">
+                <img src="scr/Polivitamínico Zinco Pl 60 comprimidos.webp"
+                  class="card-img-top" alt="Produto 6">
+                <div class="card-body">
+                  <h6 class="card-title">Polivitamínico Zinco Pl 60 comprimidos
+                  </h6>
+                  <p class="preco fw-bold">R$ 92,49</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <!-- CARD 1 -->
+            <div class="col-6 col-md-4 col-lg-2 mb-3">
+              <div class="card h-100 p-2 shadow-sm produto-card">
+                <img src="scr/Metilfolato + Vitamina D 2000UI Ofolato para Gestantes 90 comprimidos.webp" class="card-img-top"
+                  alt="Produto 1">
+                <div class="card-body">
+                  <h6 class="card-title">Metilfolato + Vitamina D 2000UI Ofolato para Gestantes 90 comprimidos</h6>
+                  <p class="preco fw-bold">R$ 168,99</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-6 col-md-4 col-lg-2 mb-3">
+              <div class="card h-100 p-2 shadow-sm produto-card">
+                <img src="scr/Neosaldina Analgésico 30 drágeas.webp" class="card-img-top" alt="Produto 2">
+                <div class="card-body">
+                  <h6 class="card-title">Neosaldina Analgésico 30 drágeas</h6>
+                  <p class="preco fw-bold">R$ 71,98</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-6 col-md-4 col-lg-2 mb-3">
+              <div class="card h-100 p-2 shadow-sm produto-card">
+                <img src="scr/Polivitamínico Luvis Gold para Visão 60 cápsulas.webp" class="card-img-top"
+                  alt="Produto 3">
+                <div class="card-body">
+                  <h6 class="card-title">Polivitamínico Luvis Gold para Visão 60 cápsulas</h6>
+                  <p class="preco fw-bold">R$ 120,49</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-6 col-md-4 col-lg-2 mb-3">
+              <div class="card h-100 p-2 shadow-sm produto-card">
+                <img src="scr/Metamucil Fibra Psyllium Sabor Laranja Sem Açúcar 174g.webp" class="card-img-top" alt="Produto 4">
+                <div class="card-body">
+                  <h6 class="card-title">Metamucil Fibra Psyllium Sabor Laranja Sem Açúcar 174g</h6>
+                  <p class="preco fw-bold">R$ 90,49</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="col-6 col-md-4 col-lg-2 mb-3">
+              <div class="card h-100 p-2 shadow-sm produto-card">
+                <img src="scr/Colírio Optive Solução Oftálmica 15ml.webp"
+                  class="card-img-top" alt="Produto 5">
+                <div class="card-body">
+                  <h6 class="card-title">Colírio Optive Solução Oftálmica 15ml</h6>
+                  <p class="preco fw-bold">R$ 82,43</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="col-6 col-md-4 col-lg-2 mb-3">
+              <div class="card h-100 p-2 shadow-sm produto-card">
+                <img src="scr/Suplemento Alimentar com Cálcio + Colágeno Fixare Flex 120 comprimidos.webp"
+                  class="card-img-top" alt="Produto 6">
+                <div class="card-body">
+                  <h6 class="card-title">Suplemento Alimentar com Cálcio + Colágeno Fixare Flex 120 comprimidos</h6>
+                  <p class="preco fw-bold">R$ 92,49</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Botões -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#produtosCarousel2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#produtosCarousel2" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mamães e bebês -->
+    <section id="mamaes-bebes" class="container py-5">
+      <h3 class="mb-4">Mamães e bebês</h3>
+
+      <!-- Carrossel-3 -->
+      <div id="produtosCarousel3" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- ITEM 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <!-- CARD 1 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Suplemento Alimentar Infantil Fortini Plus Sabor Sem Sabor 400g.webp" class="card-img-top" alt="Produto 1">
+                  <div class="card-body">
+                     <h6 class="card-title">Suplemento Alimentar Infantil Fortini Plus Sabor Sem Sabor 400gFarmácia</h6>
+                    <p class="preco fw-bold">R$ 168,99</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Suplemento Alimentar Infantil Ninho Nutriadvance de 4 a 8 anos Sabor Baunilha 350g.webp"
+                    class="card-img-top" alt="Produto 2">
+                  <div class="card-body">
+                    <h6 class="card-title">Suplemento Alimentar Infantil Ninho Nutriadvance de 4 a 8 anos Sabor Baunilha 350g</h6>
+                    <p class="preco fw-bold">R$ 71,98</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Composto Lácteo Infantil Neslac Supreme de 3 a 5 anos 800g.webp"
+                    class="card-img-top" alt="Produto 3">
+                  <div class="card-body">
+                    <h6 class="card-title">Composto Lácteo Infantil Neslac Supreme de 3 a 5 anos 800g</h6>
+                    <p class="preco fw-bold">R$ 120,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 4 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Aptanutri Premium 3 Fórmula Infantil 1 a 3 Anos 800g.webp" class="card-img-top" alt="Produto 4">
+                  <div class="card-body">
+                    <h6 class="card-title">Aptanutri Premium 3 Fórmula Infantil 1 a 3 Anos 800g</h6>
+                    <p class="preco fw-bold">R$ 90,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 5 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Fórmula Infantil Ninho Primeira Infância 1 a 3 Anos Nutri Fases 1+ 800g.webp" class="card-img-top"
+                    alt="Produto 5">
+                  <div class="card-body">
+                    <h6 class="card-title">Fórmula Infantil Ninho Primeira Infância 1 a 3 Anos Nutri Fases 1+ 800g
+                    </h6>
+                    <p class="preco fw-bold">R$ 82,43</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 6 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Fralda Cremer Magic Care Dia e Noite XG 52 Unidades.png"
+                    class="card-img-top" alt="Produto 6">
+                  <div class="card-body">
+                    <h6 class="card-title">Fralda Cremer Magic Care Dia e Noite XG 52 Unidades</h6>
+                    <p class="preco fw-bold">R$ 92,49</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="carousel-item">
+            <div class="row">
+              <!-- CARD 1 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Sabonete Líquido Infantil Baby Dove Hidratação Enriquecida Refil 180ml.webp" class="card-img-top"
+                    alt="Produto 1">
+                  <div class="card-body">
+                    <h6 class="card-title">Sabonete Líquido Infantil Baby Dove Hidratação Enriquecida Refil 180ml</h6>
+                    <p class="preco fw-bold">R$ 168,99</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Repelente Granado Bebê Longa Duração Pele Sensível 110ml.webp" class="card-img-top" alt="Produto 2">
+                  <div class="card-body">
+                    <h6 class="card-title">Repelente Granado Bebê Longa Duração Pele Sensível 110ml</h6>
+                    <p class="preco fw-bold">R$ 71,98</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Sabonete Líquido Infantil Protex Baby Glicerina 400ml.webp" class="card-img-top"
+                    alt="Produto 3">
+                  <div class="card-body">
+                    <h6 class="card-title">Sabonete Líquido Infantil Protex Baby Glicerina 400ml</h6>
+                    <p class="preco fw-bold">R$ 120,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 4 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Creme Dental Infantil Tandy Tutti Frutti Colgate 50g.webp" class="card-img-top"
+                    alt="Produto 4">
+                  <div class="card-body">
+                    <h6 class="card-title">Creme Dental Infantil Tandy Tutti Frutti Colgate 50g</h6>
+                    <p class="preco fw-bold">R$ 90,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 5 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Sabonete Líquido Infantil Kronel Baby Extrato de Aroeira 250ml.webp"
+                    class="card-img-top" alt="Produto 5">
+                  <div class="card-body">
+                    <h6 class="card-title">Sabonete Líquido Infantil Kronel Baby Extrato de Aroeira 250ml</h6>
+                    <p class="preco fw-bold">R$ 82,43</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 6 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Creme Para Assaduras Amorável 45g.webp"
+                    class="card-img-top" alt="Produto 6">
+                  <div class="card-body">
+                    <h6 class="card-title">Creme Para Assaduras Amorável 45g</h6>
+                    <p class="preco fw-bold">R$ 92,49</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Botões -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#produtosCarousel3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#produtosCarousel3" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+          </button>
+        </div>
+    </section>
+
+    <!-- Dermo e Beleza -->
+    <section id="beleza" class="container py-5">
+      <h3 class="mb-4">Dermo e Beleza</h3>
+
+      <!-- Carrossel-4 -->
+      <div id="produtosCarousel4" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- ITEM 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <!-- CARD 1 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Sérum Facial Skinceuticals Ha Intensifier Multi-Glycan Frasco 30ml.webp" class="card-img-top" alt="Produto 1">
+                  <div class="card-body">
+                    <h6 class="card-title">Sérum Facial Skinceuticals Ha Intensifier Multi-Glycan Frasco 30ml</h6>
+                    <p class="preco fw-bold">R$ 368,99</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Sérum SkinCeuticals P-Tiox Antirrugas 30ml.webp"
+                    class="card-img-top" alt="Produto 2">
+                  <div class="card-body">
+                    <h6 class="card-title">Sérum SkinCeuticals P-Tiox Antirrugas 30ml</h6>
+                    <p class="preco fw-bold">R$ 271,98</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Pó Compacto Asepxia Antiacne Matte FPS 20 Cor Marfim 10g.webp"
+                    class="card-img-top" alt="Produto 3">
+                  <div class="card-body">
+                    <h6 class="card-title">Pó Compacto Asepxia Antiacne Matte FPS 20 Cor Marfim 10g</h6>
+                    <p class="preco fw-bold">R$ 120,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 4 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Protetor Solar Facial Sunmax Fluid FPS55 120ml.png" class="card-img-top" alt="Produto 4">
+                  <div class="card-body">
+                    <h6 class="card-title">Protetor Solar Facial Sunmax Fluid FPS55 120ml</h6>
+                    <p class="preco fw-bold">R$ 190,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 5 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Protetor Solar Sunmax Intense FPS60 120g.png" class="card-img-top"
+                    alt="Produto 5">
+                  <div class="card-body">
+                    <h6 class="card-title">Protetor Solar Sunmax Intense FPS60 120g</h6>
+                    <p class="preco fw-bold">R$ 82,43</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 6 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Creme de Pentear Seda Cachos Definidos 300ml.webp"
+                    class="card-img-top" alt="Produto 6">
+                  <div class="card-body">
+                    <h6 class="card-title">Creme de Pentear Seda Cachos Definidos 300ml</h6>
+                    <p class="preco fw-bold">R$ 92,49</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="carousel-item">
+            <div class="row">
+              <!-- CARD 1 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Colônia Phebo Origens Limão Siciliano 200ml.webp" class="card-img-top"
+                    alt="Produto 1">
+                  <div class="card-body">
+                    <h6 class="card-title">Colônia Phebo Origens Limão Siciliano 200ml</h6>
+                    <p class="preco fw-bold">R$ 168,99</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Colônia Phebo Origens Nectarina Da Andaluzia 200ml.webp" class="card-img-top" alt="Produto 2">
+                  <div class="card-body">
+                    <h6 class="card-title">Colônia Phebo Origens Nectarina Da Andaluzia 200ml</h6>
+                    <p class="preco fw-bold">R$ 71,98</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Shampoo Anticaspa Clear Men Sports by Cristiano Ronaldo Limpeza Profunda Mentol 400ml.webp" class="card-img-top"
+                    alt="Produto 3">
+                  <div class="card-body">
+                    <h6 class="card-title">Shampoo Anticaspa Clear Men Sports by Cristiano Ronaldo Limpeza Profunda Mentol 400ml</h6>
+                    <p class="preco fw-bold">R$ 120,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 4 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Removedor De Esmalte Dauf Com Acetona 100ml.webp" class="card-img-top"
+                    alt="Produto 4">
+                  <div class="card-body">
+                    <h6 class="card-title">Removedor De Esmalte Dauf Com Acetona 100ml</h6>
+                    <p class="preco fw-bold">R$ 40,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 5 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Sabonete Líquido Facial Dermotivin Original Peles Mistas a Oleosas 300ml.webp"
+                    class="card-img-top" alt="Produto 5">
+                  <div class="card-body">
+                    <h6 class="card-title">Sabonete Líquido Facial Dermotivin Original Peles Mistas a Oleosas 300ml</h6>
+                    <p class="preco fw-bold">R$ 82,43</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 6 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Gel De Limpeza Principia peles Sensiveis E Secas Gl-03 200ml.webp"
+                    class="card-img-top" alt="Produto 6">
+                  <div class="card-body">
+                    <h6 class="card-title">Gel De Limpeza Principia peles Sensiveis E Secas Gl-03 200ml</h6>
+                    <p class="preco fw-bold">R$ 92,49</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Botões -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#produtosCarousel4" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#produtosCarousel4" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+          </button>
+        </div>
+    </section>
+
+    <!-- Medicamentos e Saúde -->
+    <section id="medicamentos-saude" class="container py-5">
+      <h3 class="mb-4">Medicamentos e Saúde</h3>
+
+      <!-- Carrossel-5 -->
+      <div id="produtosCarousel5" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- ITEM 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <!-- CARD 1 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Hinox 60 Comprimidos.webp" class="card-img-top" alt="Produto 1">
+                  <div class="card-body">
+                    <h6 class="card-title">Hinox 60 Comprimidos</h6>
+                    <p class="preco fw-bold">R$ 168,99</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Dipirona Monoidratada 1g 4 Comprimidos Genérico Neo Química.png"
+                    class="card-img-top" alt="Produto 2">
+                  <div class="card-body">
+                    <h6 class="card-title">Dipirona Monoidratada 1g 4 Comprimidos Genérico Neo Química</h6>
+                    <p class="preco fw-bold">R$ 71,98</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Dipirona Sódica 500mg Gotas 20ml EMS Genérico.png"
+                    class="card-img-top" alt="Produto 3">
+                  <div class="card-body">
+                    <h6 class="card-title">Dipirona Sódica 500mg Gotas 20ml EMS Genérico</h6>
+                    <p class="preco fw-bold">R$ 120,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 4 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Pomada Antiassaduras Nistatina + Óxido de Zinco Neo Química 60g.webp" 
+                  class="card-img-top" alt="Produto 4">
+                  <div class="card-body">
+                    <h6 class="card-title">Pomada Antiassaduras Nistatina + Óxido de Zinco Neo Química 60g</h6>
+                    <p class="preco fw-bold">R$ 90,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 5 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Dipirona Monoidratada 500mg 10 Comprimidos Genérico EMS.webp" class="card-img-top"
+                    alt="Produto 5">
+                  <div class="card-body">
+                    <h6 class="card-title">Dipirona Monoidratada 500mg 10 Comprimidos Genérico EMS</h6>
+                    <p class="preco fw-bold">R$ 82,43</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 6 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Ibuprofeno 100mg Gotas 20ml Genérico Medley.webp"
+                    class="card-img-top" alt="Produto 6">
+                  <div class="card-body">
+                    <h6 class="card-title">Ibuprofeno 100mg Gotas 20ml Genérico Medley</h6>
+                    <p class="preco fw-bold">R$ 92,49</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="carousel-item">
+            <div class="row">
+              <!-- CARD 1 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Neocoflan 11,6mg Aerossol 85ml.webp" class="card-img-top"
+                    alt="Produto 1">
+                  <div class="card-body">
+                    <h6 class="card-title">Neocoflan 11,6mg/g Aerossol 85ml</h6>
+                    <p class="preco fw-bold">R$ 168,99</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Novalgina 50ml Sabor Framboesa Solução Oral Pediátrico 100ml + Seringa Dosadora.webp" class="card-img-top" alt="Produto 2">
+                  <div class="card-body">
+                    <h6 class="card-title">Novalgina 50mg/ml Sabor Framboesa Solução Oral Pediátrico 100ml + Seringa Dosadora</h6>
+                    <p class="preco fw-bold">R$ 71,98</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Cetoconazol 20ml Shampoo 100ml Genérico EMS.png" class="card-img-top"
+                    alt="Produto 3">
+                  <div class="card-body">
+                    <h6 class="card-title">Cetoconazol 20mg/ml Shampoo 100ml Genérico EMS</h6>
+                    <p class="preco fw-bold">R$ 120,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 4 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Loxonin Flex 100mg 7 Adesivos.jpg" class="card-img-top"
+                    alt="Produto 4">
+                  <div class="card-body">
+                    <h6 class="card-title">Loxonin Flex 100mg 7 Adesivos</h6>
+                    <p class="preco fw-bold">R$ 90,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 5 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Nevralgex com 60 Comprimidos.webp"
+                    class="card-img-top" alt="Produto 5">
+                  <div class="card-body">
+                    <h6 class="card-title">Nevralgex com 60 Comprimidos</h6>
+                    <p class="preco fw-bold">R$ 82,43</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 6 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Cafilisador 16 Comprimidos.webp"
+                    class="card-img-top" alt="Produto 6">
+                  <div class="card-body">
+                    <h6 class="card-title">Cafilisador 16 Comprimidos</h6>
+                    <p class="preco fw-bold">R$ 92,49</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Botões -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#produtosCarousel5" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#produtosCarousel5" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+          </button>
+        </div>
+    </section>
+
+    <!-- Vida Saudável-->
+    <section id="vida-saudavel" class="container py-5">
+      <h3 class="mb-4">Vida Saudável</h3>
+
+      <!-- Carrossel-7 -->
+      <div id="produtosCarousel7" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- ITEM 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+
+              <!-- CARD 1 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Suplemento Adulto Ensure em Pó Sabor Baunilha 850g.webp"
+                   class="card-img-top" alt="Produto 1">
+                  <div class="card-body">
+                    <h6 class="card-title">Suplemento Adulto Ensure em Pó Sabor Baunilha 850g</h6>
+                    <p class="preco fw-bold">R$ 168,99</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Nutridrink Protein Sem Sabor 350g.webp"
+                    class="card-img-top" alt="Produto 2">
+                  <div class="card-body">
+                    <h6 class="card-title">Nutridrink Protein Sem Sabor 350g</h6>
+                    <p class="preco fw-bold">R$ 71,98</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Complemento Alimentar Nutren Senior Sem Sabor 740g.webp"
+                    class="card-img-top" alt="Produto 3">
+                  <div class="card-body">
+                    <h6 class="card-title">Complemento Alimentar Nutren Senior Sem Sabor 740g</h6>
+                    <p class="preco fw-bold">R$ 120,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 4 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Whey Piracanjuba 23g Cacau Zero Lactose 250ml.png" class="card-img-top" alt="Produto 4">
+                  <div class="card-body">
+                    <h6 class="card-title">Whey Piracanjuba 23g Cacau Zero Lactose 250ml</h6>
+                    <p class="preco fw-bold">R$ 90,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 5 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Whey Piracanjuba 23g Baunilha Zero Lactose 250ml.png" class="card-img-top"
+                    alt="Produto 5">
+                  <div class="card-body">
+                    <h6 class="card-title">Whey Piracanjuba 23g Baunilha Zero Lactose 250ml
+                    </h6>
+                    <p class="preco fw-bold">R$ 82,43</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 6 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Complemento Alimentar Sustagen Adultos+ Sabor Morango Lata 400g.webp"
+                    class="card-img-top" alt="Produto 6">
+                  <div class="card-body">
+                    <h6 class="card-title">Complemento Alimentar Sustagen Adultos+ Sabor Morango Lata 400g</h6>
+                    <p class="preco fw-bold">R$ 92,49</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="carousel-item">
+            <div class="row">
+              <!-- CARD 1 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Suplemento Adulto Ensure Em Pó Sabor Morango 850g.webp" class="card-img-top"
+                    alt="Produto 1">
+                  <div class="card-body">
+                    <h6 class="card-title">Suplemento Adulto Ensure Em Pó Sabor Morango 850g</h6>
+                    <p class="preco fw-bold">R$ 168,99</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Ativday Vitamina C + Própolis + Zinco Com 10 Comprimidos Efervescentes.webp"
+                    class="card-img-top" alt="Produto 2">
+                  <div class="card-body">
+                    <h6 class="card-title">Ativday Vitamina C + Própolis + Zinco Com 10 Comprimidos Efervescentes</h6>
+                    <p class="preco fw-bold">R$ 71,98</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Kit Adoçante Líquido Zero-Cal Stevia 2 unidades de 80ml cada.webp" class="card-img-top"
+                    alt="Produto 3">
+                  <div class="card-body">
+                    <h6 class="card-title">Kit Adoçante Líquido Zero-Cal Stevia 2 unidades de 80ml cada</h6>
+                    <p class="preco fw-bold">R$ 120,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 4 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Barra de Proteína Dux Chocolate e Coco 60g.webp" class="card-img-top"
+                    alt="Produto 4">
+                  <div class="card-body">
+                    <h6 class="card-title">Barra de Proteína Dux Chocolate e Coco 60g</h6>
+                    <p class="preco fw-bold">R$ 90,49</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 5 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Suplemento Alimentar Nescafé Pro-Energy Capuccino Clássico 270ml.webp"
+                    class="card-img-top" alt="Produto 5">
+                  <div class="card-body">
+                    <h6 class="card-title">Suplemento Alimentar Nescafé Pro-Energy Capuccino Clássico 270ml</h6>
+                    <p class="preco fw-bold">R$ 82,43</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 6 -->
+              <div class="col-6 col-md-4 col-lg-2 mb-3">
+                <div class="card h-100 p-2 shadow-sm produto-card">
+                  <img src="scr/Barra De Proteína Dux Protein Bar Chocolate Branco E Frutas Vermelhas Com 60g.webp"
+                    class="card-img-top" alt="Produto 6">
+                  <div class="card-body">
+                    <h6 class="card-title">Barra De Proteína Dux Protein Bar Chocolate Branco E Frutas Vermelhas Com 60g</h6>
+                    <p class="preco fw-bold">R$ 92,49</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Botões -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#produtosCarousel7" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#produtosCarousel7" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+          </button>
+        </div>
+    </section>
+
+
+</body>
+<!--Rodapé-->
+<footer class="bg-light py-4 mt-4">
+  <div class="container">
+    <div class="row text-center">
+
+      <div class="col-md-3 mb-3">
+        <strong>Fale Conosco</strong><br>
+        <span>Contatos:</span>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <strong>Televendas - 06h00 às 23h00</strong><br>
+        4002-8922
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <strong>Atendimento ao cliente</strong><br>
+        2298-2004
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <strong>Instagram</strong><br>
+        @ Pague_mais.oficial
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</html>
