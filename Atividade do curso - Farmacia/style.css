@@ -1,18 +1,17 @@
-/* ========== VARIÁVEIS ========== */
+
 :root{
-  --primary-blue: #cfefff;        /* tom inicial do gradiente e do rodapé */
-  --primary-blue-dark: #0d6efd;   /* para destaques */
+  --primary-blue: #cfefff;        
+  --primary-blue-dark: #0d6efd;  
   --body-mid: #eaf8ff;
   --text-color: #222;
   --footer-text: rgba(0,0,0,0.78);
   --footer-height: 120px;
 }
 
-/* ======= RESET & BASE ======= */
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; font-family: "Poppins", Arial, sans-serif; color: var(--text-color); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
 
-/* ======= GRADIENTE DO CORPO (azul -> branco) ======= */
+/* GRADIENTE DO CORPO */
 body {
   min-height: 100vh;
   display: flex;
@@ -21,12 +20,11 @@ body {
   background-attachment: fixed;
 }
 
-/* útil para garantir footer no fim sem sobreposição */
 .main-content { flex: 1 0 auto; }
 
-/* ======= NAVBAR ======= */
+
 .navbar {
-  background: rgba(255,255,255,0.90); /* leve translucidez para ver o gradiente atrás */
+  background: rgba(255,255,255,0.90); 
   border-bottom: 1px solid rgba(0,0,0,0.06);
   box-shadow: 0 1px 6px rgba(20,20,20,0.03);
   backdrop-filter: blur(4px);
@@ -55,7 +53,7 @@ body {
 .navbar i { color: var(--primary-blue-dark); transition: transform .2s; }
 .navbar i:hover { transform: scale(1.12); }
 
-/* ======= MENU DE CATEGORIAS ======= */
+/*  MENU DE CATEGORIAS  */
 .menu-categorias {
   background: rgba(255,255,255,0.95);
   border-bottom: 1px solid rgba(0,0,0,0.04);
@@ -79,10 +77,9 @@ body {
   color: #fff;
 }
 
-/* ======= RODAPÉ (sobrescreve .bg-light do Bootstrap só para o footer) ======= */
-/* Observação: o HTML fornecido tem <footer class="bg-light py-4 mt-4"> — vamos sobrescrever esse .bg-light apenas quando for footer */
+/*  RODAPÉ */
 footer.bg-light {
-  background: var(--primary-blue) !important;   /* azul claro sólido */
+  background: var(--primary-blue) !important; 
   color: var(--footer-text);
   border-top: 1px solid rgba(0,0,0,0.04);
   box-shadow: 0 -2px 10px rgba(0,0,0,0.03);
@@ -91,13 +88,12 @@ footer.bg-light {
   margin-top: 24px;
 }
 
-/* Estilizando o conteúdo do rodapé (container/colunas) */
+/* Conteúdo do rodapé */
 footer.bg-light .container { max-width: 1140px; margin: 0 auto; }
 footer.bg-light .row { align-items: center; justify-content: center; text-align: center; gap: 12px; }
 footer.bg-light .row .col-md-3 { color: var(--footer-text); }
 footer.bg-light strong { display:block; margin-bottom:6px; color: rgba(0,0,0,0.85); }
 
-/* Links no rodapé (se tiver) */
 footer.bg-light a {
   color: var(--primary-blue-dark);
   text-decoration: none;
@@ -105,10 +101,6 @@ footer.bg-light a {
 }
 footer.bg-light a:hover { text-decoration: underline; }
 
-/* Se quiser um rodapé levemente translúcido (opcional) */
-/* footer.bg-light { background: rgba(207,239,255,0.97) !important; backdrop-filter: blur(2px); } */
-
-/* ======= CARTÕES / SEÇÕES (para boa leitura sobre o gradiente) ======= */
 .card-like {
   background: rgba(255,255,255,0.94);
   border-radius: 12px;
@@ -117,7 +109,6 @@ footer.bg-light a:hover { text-decoration: underline; }
   border: 1px solid rgba(10,10,10,0.03);
 }
 
-/* ======= RESPONSIVIDADE ======= */
 @media (max-width: 992px) {
   .navbar .gap-4 { gap: 1rem; }
   .search-bar { margin-top: 8px; }
@@ -131,3 +122,4 @@ footer.bg-light a:hover { text-decoration: underline; }
   .menu-categorias .categoria { padding: 5px 10px; font-size: 0.82rem; }
   footer.bg-light .row .col-md-3 { width: 100%; }
 }
+
